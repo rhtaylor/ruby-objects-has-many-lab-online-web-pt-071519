@@ -17,6 +17,6 @@ def author=(author_obj)
 end
 def author_name
   author.name.to_s
-binding.pry
+
 end
 end
