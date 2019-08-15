@@ -15,4 +15,9 @@ class Song
 def self.all
   @@all
 end
+def artist_name
+  if artist.methods.include? :name
+    artist.name
+  else nil
+  end
 end
