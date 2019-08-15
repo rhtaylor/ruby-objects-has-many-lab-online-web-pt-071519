@@ -17,6 +17,9 @@ def author=(author_obj)
 
 end
 def author_name
-  author.name
+  if author.name.nil?
+    nil
+  else author.name
+  end
 end
 end
