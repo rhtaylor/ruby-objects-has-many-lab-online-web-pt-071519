@@ -11,12 +11,11 @@ def self.all
   @@all
 end
 def author=(author_obj)
-
-    binding.pry
-
-  @author = author_obj
-  author_obj.posts << self
-
+  if author_obj.methods.include? :name 
+    @author = author_obj
+    author_obj.posts << self
+  else author_obj.name = "nil"
+  end
 end
 def author_name
   author.name.nil? ? nil : author.name
