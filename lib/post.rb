@@ -16,9 +16,7 @@ def author=(author_obj)
 
 end
 def author_name
-  if author.name == NoMethodError
-    nil
-  else author.name
-  end
+  author.name 
+  binding.pry
 end
 end
