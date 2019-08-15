@@ -13,6 +13,7 @@ end
 def author=(author_obj)
   @author = author_obj
   author_obj.posts << self
+  binding.pry
 end
 def author_name
   author.name.nil? ? nil : author.name
