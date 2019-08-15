@@ -11,7 +11,7 @@ def self.all
   @@all
 end
 def author=(author_obj)
-  author_obj.each do |key, val|
+  author_obj.each do |key|
     binding.pry
   end
   @author = author_obj
