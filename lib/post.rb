@@ -17,6 +17,6 @@ def author=(author_obj)
 end
 def author_name
   author.name.nil? ? nil : author.name
-  binding.pry
+
 end
 end
