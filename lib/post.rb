@@ -11,7 +11,7 @@ def self.all
   @@all
 end
 def author=(author_obj)
-  # @author = author_obj
+  @author = author_obj
   author_obj.posts << self
 
 end
