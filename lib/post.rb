@@ -11,9 +11,9 @@ def self.all
   @@all
 end
 def author=(author_obj)
-  
+
     binding.pry
-  
+
   @author = author_obj
   author_obj.posts << self
 
