@@ -20,4 +20,5 @@ def artist_name
     artist.name
   else nil
   end
+end 
 end
