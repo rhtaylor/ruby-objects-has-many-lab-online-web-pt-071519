@@ -17,9 +17,9 @@ def author=(author_obj)
 
 end
 def author_name
-  if author.name.nil?
-    nil
-  else author.name
+  if author.methods.include? :name
+    author.name
+  else nil
   end
 end
 end
