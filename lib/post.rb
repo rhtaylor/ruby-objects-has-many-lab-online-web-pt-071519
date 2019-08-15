@@ -16,7 +16,9 @@ def author=(author_obj)
 
 end
 def author_name
-  author.name.to_s
-
+  if author.name == NoMethodError:
+    nil 
+  else author.name 
+  end
 end
 end
